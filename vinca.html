@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav &amp; Footer — Component Reference — Northbound Studio</title>
+  <meta name="description" content="Standalone reference for the shared navigation and footer components used across the Northbound Studio site.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-nav">
+    <div class="wrap">
+      <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <span class="status-pill nav-status">
+          <span class="status-dot"></span> All systems normal
+        </span>
+        <a href="cunanan.html" class="btn btn-secondary" style="padding:9px 18px; font-size:0.85rem;">Log in</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-bottom:20px;">
+      <div class="wrap" style="max-width:720px;">
+        <span class="eyebrow">Component reference</span>
+        <h1 style="font-size:2rem;">Nav &amp; Footer</h1>
+        <p>This page exists as a single place to preview the two components that repeat across every other page — <code>index.html</code>, <code>about.html</code>, <code>contact.html</code>, <code>login.html</code>, and <code>dashboard.html</code> — so any change here can be copied into the rest of the site in one pass. Try resizing the window to see the nav collapse into the mobile menu at 760px.</p>
+      </div>
+    </section>
+
+    <!-- ============ NAV SHOWCASE ============ -->
+    <section style="padding-top:0;">
+      <div class="wrap">
+        <h3 style="margin-bottom:14px;">Navigation</h3>
+        <div class="showcase-frame">
+          <div class="showcase-label">&lt;header class="site-nav"&gt; — sticky, active-link underline, "Log in" as a corner button, mobile toggle</div>
+          <div style="padding:24px;">
+            <ul style="margin:0; padding-left:18px; color:var(--ink-soft); font-size:0.92rem; line-height:1.9;">
+              <li>Wordmark links home from every page.</li>
+              <li><code>Log in</code> lives in <code>.nav-right</code>, styled as a <code>.btn.btn-secondary</code>, rather than inside <code>.nav-links</code> — it reads as an action, not a nav destination.</li>
+              <li>The active link gets a blue underline via <code>.nav-links a.active</code>, set automatically by <code>js/main.js</code> based on the current filename.</li>
+              <li>The status pill (<span class="status-pill" style="display:inline-flex;"><span class="status-dot"></span> All systems normal</span>) is the recurring signature element, echoed again on the Dashboard as real status data.</li>
+              <li>Below 760px width, the nav links collapse behind the hamburger button; the Log in button stays visible in the corner.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ============ FOOTER SHOWCASE ============ -->
+        <h3 style="margin-bottom:14px;">Footer</h3>
+        <div class="showcase-frame">
+          <div class="showcase-label">&lt;footer class="site-footer"&gt; — four-column grid, collapses to two columns under 760px</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER  ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+        <p>A small studio building dependable web products for teams that'd rather ship than wait.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="cunanan.html">Log in</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@northbound.studio">hello@northbound.studio</a></li>
+          <li><a href="tel:+15551234567">+63 9123456789</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; 2026 Northbound Studio.</span>
+      <span class="status-pill"><span class="status-dot"></span> All systems normal</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
