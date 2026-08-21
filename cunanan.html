@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in — Northbound Studio</title>
+  <meta name="description" content="Log in to your Northbound Studio dashboard.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-nav">
+    <div class="wrap">
+      <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <span class="status-pill nav-status">
+          <span class="status-dot"></span> All systems normal
+        </span>
+        <a href="cunanan.html" class="btn btn-secondary" style="padding:9px 18px; font-size:0.85rem;">Log in</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="login-shell">
+      <div class="wrap">
+        <div class="form-shell" style="max-width:440px;">
+          <div class="login-head">
+            <span class="eyebrow">Client dashboard</span>
+            <h1 style="font-size:1.8rem;">Welcome back</h1>
+            <p>Log in to check project status and recent activity.</p>
+          </div>
+
+          <div class="alert alert-success" id="login-success" role="status">
+            Signed in — redirecting to your dashboard&hellip;
+          </div>
+          <div class="alert alert-error" id="login-error" role="alert">
+            That email and password combination doesn't match our records.
+          </div>
+
+          <form id="login-form" novalidate>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="demo@northbound.studio" autocomplete="username">
+              <p class="field-error">Enter your email to continue.</p>
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <div style="position:relative;">
+                <input type="password" id="password" name="password" placeholder="northbound123" autocomplete="current-password" style="padding-right:64px;">
+                <button type="button" id="toggle-password" aria-pressed="false"
+                  style="position:absolute; right:8px; top:50%; transform:translateY(-50%); background:none; border:none; font-family:var(--font-mono); font-size:0.72rem; color:var(--blue); cursor:pointer;">Show</button>
+              </div>
+              <p class="field-error">Enter your password to continue.</p>
+              <p class="hint">Demo credentials: demo@northbound.studio / northbound123</p>
+            </div>
+
+            <div class="form-row">
+              <label class="checkline">
+                <input type="checkbox" id="remember" name="remember">
+                Keep me signed in
+              </label>
+              <a href="#" style="font-size:0.85rem;">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+          </form>
+
+          <div class="divider-line">or</div>
+          <p class="form-note">Don't have an account yet? <a href="aquino.html">Talk to us about a project</a> and we'll set one up.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+        <p>A small studio building dependable web products for teams that'd rather ship than wait.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="cunanan.html">Log in</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@northbound.studio">hello@northbound.studio</a></li>
+          <li><a href="tel:+15551234567">+63 9123456789</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; 2026 Northbound Studio.</span>
+      <span class="status-pill"><span class="status-dot"></span> All systems normal</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
