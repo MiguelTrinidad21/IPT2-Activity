@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Northbound Studio</title>
+  <meta name="description" content="Project status dashboard for Northbound Studio clients.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-nav">
+    <div class="wrap">
+      <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <span class="status-pill nav-status">
+          <span class="status-dot"></span> All systems normal
+        </span>
+        <a href="cunanan.html" class="btn btn-secondary" style="padding:9px 18px; font-size:0.85rem;">Log in</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dash-shell">
+    <div class="wrap">
+
+      <div class="dash-header">
+        <div>
+          <span class="eyebrow">Client dashboard</span>
+          <h1 style="font-size:1.9rem; margin:0;">Good afternoon, Juan Dela Cruz</h1>
+        </div>
+        <div class="dash-meta">
+          <span>LAST UPDATED · 2 MIN AGO</span>
+          <span class="status-pill"><span class="status-dot"></span> All systems normal</span>
+        </div>
+      </div>
+
+      <!-- ============ STAT CARDS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="label">Active projects <span class="status-dot"></span></div>
+          <div class="value">4</div>
+          <div class="delta up">+1 this quarter</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Open tickets <span class="status-dot status-amber"></span></div>
+          <div class="value">7</div>
+          <div class="delta down">+3 vs last week</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Avg. response time <span class="status-dot"></span></div>
+          <div class="value">3.2h</div>
+          <div class="delta up">18% faster</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Uptime, 30 days <span class="status-dot"></span></div>
+          <div class="value">99.98%</div>
+          <div class="delta up">Within SLA</div>
+        </div>
+      </div>
+
+      <!-- ============ PANELS ============ -->
+      <div class="dash-panels">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Deploys this week</h3>
+            <span class="status-pill"><span class="status-dot"></span> 23 total</span>
+          </div>
+          <div class="bar-chart">
+            <div class="bar" style="height:38%;"></div>
+            <div class="bar" style="height:52%;"></div>
+            <div class="bar" style="height:31%;"></div>
+            <div class="bar" style="height:70%;"></div>
+            <div class="bar peak" style="height:88%;"></div>
+            <div class="bar" style="height:44%;"></div>
+            <div class="bar" style="height:20%;"></div>
+          </div>
+          <div class="bar-labels">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>System status</h3>
+          </div>
+          <ul class="status-list">
+            <li>
+              <span>API</span>
+              <span class="status-pill"><span class="status-dot"></span> Operational</span>
+            </li>
+            <li>
+              <span>Web app</span>
+              <span class="status-pill"><span class="status-dot"></span> Operational</span>
+            </li>
+            <li>
+              <span>Background jobs</span>
+              <span class="status-pill"><span class="status-dot status-amber"></span> Degraded</span>
+            </li>
+            <li>
+              <span>Email delivery</span>
+              <span class="status-pill"><span class="status-dot"></span> Operational</span>
+            </li>
+            <li>
+              <span>File storage</span>
+              <span class="status-pill"><span class="status-dot"></span> Operational</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+        <p>A small studio building dependable web products for teams that'd rather ship than wait.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="cunanan.html">Log in</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@northbound.studio">hello@northbound.studio</a></li>
+          <li><a href="tel:+15551234567">+63 9123456789</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; 2026 Northbound Studio.</span>
+      <span class="status-pill"><span class="status-dot"></span> All systems normal</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
