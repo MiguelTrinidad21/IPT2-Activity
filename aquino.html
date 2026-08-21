@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Northbound Studio</title>
+  <meta name="description" content="Get in touch with Northbound Studio about a new project or question.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-nav">
+    <div class="wrap">
+      <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <span class="status-pill nav-status">
+          <span class="status-dot"></span> All systems normal
+        </span>
+        <a href="cunanan.html" class="btn btn-secondary" style="padding:9px 18px; font-size:0.85rem;">Log in</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:10px;">
+      <div class="wrap" style="max-width:760px;">
+        <span class="eyebrow">Get in touch</span>
+        <h1>Tell us what you're building.</h1>
+        <p style="font-size:1.05rem;">A few sentences is plenty — what you're trying to solve, roughly when you'd want to start, and how to reach you back.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap contact-grid">
+
+        <!-- ============ CONTACT INFO ============ -->
+        <div>
+          <h3>Other ways to reach us</h3>
+          <p>Prefer email or a call? Either works — we read everything within a business day.</p>
+          <ul class="contact-info-list">
+            <li>
+              <span>Email</span>
+              <a href="mailto:hello@northbound.studio">hello@northbound.studio</a>
+            </li>
+            <li>
+              <span>Phone</span>
+              <a href="tel:+15551234567">+63 9123456789 </a>
+            </li>
+            <li>
+              <span>Studio</span>
+              123 San Isidro, Tarlac City, Tarlac
+            </li>
+            <li>
+              <span>Hours</span>
+              Monday–Friday, 9am–6pm PT
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============ FORM ============ -->
+        <div class="form-shell">
+          <div class="alert alert-success" id="form-success" role="status">
+            Message sent — we'll reply within one business day.
+          </div>
+          <div class="alert alert-error" id="form-error" role="alert">
+            Please fix the highlighted fields and try again.
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Juan Delacruz" autocomplete="name">
+              <p class="field-error">Please tell us your name.</p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="juandelacruz@example.com" autocomplete="email">
+              <p class="field-error">Enter a valid email address.</p>
+            </div>
+
+            <div class="field">
+              <label for="topic">What's this about</label>
+              <select id="topic" name="topic">
+                <option>New project</option>
+                <option>Existing project support</option>
+                <option>Speaking or press</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="A little about what you're working on..."></textarea>
+              <p class="field-error">Add a short message so we know how to help.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send message</button>
+            <p class="form-note">We don't share your details with anyone else. Ever.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="trinidad.html" class="wordmark">Northbound<span class="dot">.</span></a>
+        <p>A small studio building dependable web products for teams that'd rather ship than wait.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="trinidad.html">Home</a></li>
+          <li><a href="ramos.html">About</a></li>
+          <li><a href="aquino.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="cunanan.html">Log in</a></li>
+          <li><a href="aurita.html">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@northbound.studio">hello@northbound.studio</a></li>
+          <li><a href="tel:+15551234567">+63 9123456789</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; 2026 Northbound Studio.</span>
+      <span class="status-pill"><span class="status-dot"></span> All systems normal</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
